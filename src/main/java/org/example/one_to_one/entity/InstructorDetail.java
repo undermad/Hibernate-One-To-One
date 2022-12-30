@@ -1,28 +1,20 @@
 package org.example.one_to_one.entity;
 
 
-
 import javax.persistence.*;
 
 // make sure you use javax.persistence.* imports - NOT HIBERNATE!
 @Entity
 @Table(name = "instructor_detail")
 public class InstructorDetail {
-    // annotate the class as an entity and map to db table
 
-    // define the fields
-
-    //annotate the fields with db column names
-
-    //create constructors
-
-    //generate getters and setters
-
-    //override toString method
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+
+    @OneToOne(mappedBy = "instructorDetail", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private Instructor instructor;
 
     @Column(name = "youtube_channel")
     private String youtubeChannel;
@@ -43,6 +35,14 @@ public class InstructorDetail {
         return this.id
                 + "\nYt: " + this.youtubeChannel +
                 "\nHobby: " + this.hobby;
+    }
+
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
     }
 
     public String getYoutubeChannel() {

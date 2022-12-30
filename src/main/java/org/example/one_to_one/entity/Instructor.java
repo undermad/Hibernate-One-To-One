@@ -5,19 +5,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "instructor")
 public class Instructor {
-    // annotate the class as an entity and map to db table
-
-    // define the fields
-
-    //annotate the fields with db column names
-
-    //annotate field with JoinTable and OneToOne
-
-    //create constructors
-
-    //generate getters and setters
-
-    //override toString method
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
