@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="034c3a4d-e7fd-42a9-b978-2494b5709aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/InstructorDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,7 +62,20 @@
       <recent name="D:\Spring\hibernate-one-to-one\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CreateDemo">
+    <configuration name="CreateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.CreateDemo" />
+      <module name="hibernate-one-to-one" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.one_to_one.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TestJDBC" />
       <module name="hibernate-one-to-one" />
@@ -75,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreateDemo" />
         <item itemvalue="Application.TestJDBC" />
       </list>
     </recent_temporary>
@@ -89,7 +106,7 @@
       <updated>1672415418236</updated>
       <workItem from="1672415419266" duration="505000" />
       <workItem from="1672415940223" duration="4000" />
-      <workItem from="1672415960296" duration="235000" />
+      <workItem from="1672415960296" duration="5925000" />
     </task>
     <servers />
   </component>
