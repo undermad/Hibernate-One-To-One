@@ -7,7 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CreateDemo {
+public class DeleteCourseDemo {
+
     public static void main(String[] args) {
 
         SessionFactory factory = new Configuration()
@@ -19,16 +20,13 @@ public class CreateDemo {
 
         Session session = factory.getCurrentSession();
 
-        Instructor dtworek = new Instructor("Bob", "Marley", "bob@gmail.com");
-        InstructorDetail dtworekDetail = new InstructorDetail("www.youtube.com", "reggae");
-        dtworek.setInstructorDetail(dtworekDetail);
-
-        try(factory; session) {
+        try (factory; session) {
             session.beginTransaction();
-            session.save(dtworek);
-            session.getTransaction().commit();
-            System.out.println("Done!");
-        }
 
+            session.delete(session.get(Course.class, 10));
+
+            session.getTransaction().commit();
+
+        }
     }
 }

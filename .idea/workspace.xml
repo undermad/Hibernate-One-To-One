@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="034c3a4d-e7fd-42a9-b978-2494b5709aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/BiDirectionalDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/DeleteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateCoursesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/DeleteCourseDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/RetrieveInstructorCourses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Instructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/InstructorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/InstructorDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,9 +65,22 @@
       <recent name="D:\Spring\hibernate-one-to-one\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BiDirectionalDemo">
+  <component name="RunManager" selected="Application.DeleteCourseDemo">
     <configuration name="BiDirectionalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.BiDirectionalDemo" />
+      <module name="hibernate-one-to-one" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.one_to_one.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCoursesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.CreateCoursesDemo" />
       <module name="hibernate-one-to-one" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.DeleteDemo" />
+    <configuration name="DeleteCourseDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.DeleteCourseDemo" />
       <module name="hibernate-one-to-one" />
       <extension name="coverage">
         <pattern>
@@ -103,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.TestJDBC" />
+    <configuration name="RetrieveInstructorCourses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.RetrieveInstructorCourses" />
       <module name="hibernate-one-to-one" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.one_to_one.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,10 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BiDirectionalDemo" />
-        <item itemvalue="Application.DeleteDemo" />
+        <item itemvalue="Application.DeleteCourseDemo" />
+        <item itemvalue="Application.RetrieveInstructorCourses" />
+        <item itemvalue="Application.CreateCoursesDemo" />
         <item itemvalue="Application.CreateDemo" />
-        <item itemvalue="Application.TestJDBC" />
+        <item itemvalue="Application.BiDirectionalDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +152,7 @@
       <workItem from="1672415419266" duration="505000" />
       <workItem from="1672415940223" duration="4000" />
       <workItem from="1672415960296" duration="9659000" />
+      <workItem from="1672495639917" duration="4020000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CreateDemo {
+import java.util.List;
+
+public class RetrieveInstructorCourses {
+
     public static void main(String[] args) {
 
         SessionFactory factory = new Configuration()
@@ -19,15 +22,15 @@ public class CreateDemo {
 
         Session session = factory.getCurrentSession();
 
-        Instructor dtworek = new Instructor("Bob", "Marley", "bob@gmail.com");
-        InstructorDetail dtworekDetail = new InstructorDetail("www.youtube.com", "reggae");
-        dtworek.setInstructorDetail(dtworekDetail);
-
-        try(factory; session) {
+        try (factory; session) {
             session.beginTransaction();
-            session.save(dtworek);
+
+            Instructor tempInstructor = session.get(Instructor.class, 1);
+            List<Course> tempCourses = tempInstructor.getCourses();
+
+            tempCourses.forEach(course -> System.out.println(course.getTitle()));
+
             session.getTransaction().commit();
-            System.out.println("Done!");
         }
 
     }
