@@ -3,11 +3,12 @@ package org.example.one_to_one.demo;
 import org.example.one_to_one.entity.Course;
 import org.example.one_to_one.entity.Instructor;
 import org.example.one_to_one.entity.InstructorDetail;
+import org.example.one_to_one.entity.Review;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CreateCoursesDemo {
+public class CreateCourseReview {
 
     public static void main(String[] args) {
 
@@ -16,6 +17,7 @@ public class CreateCoursesDemo {
                 .addAnnotatedClass(Course.class)
                 .addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDetail.class)
+                .addAnnotatedClass(Review.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
@@ -24,17 +26,20 @@ public class CreateCoursesDemo {
 
             session.beginTransaction();
 
-//            Instructor tempInstructor = session.get(Instructor.class, 2)
-//                    .add(session.get(Course.class, 11))
-//                    .add(session.get(Course.class, 12));
+//            Course tempCourse = new Course("Temporary Course");
+//            tempCourse.addReview(new Review("This course is amazing."));
+//            tempCourse.addReview(new Review("Just finished this course, i'm surprised"));
+//            tempCourse.addReview(new Review("Test test"));
 //
-//            session.update(tempInstructor);
-            Instructor tempInstructor = session.get(Instructor.class, 2);
-            tempInstructor.getCourses().forEach(course -> System.out.println(course.getTitle()));
+//            session.save(tempCourse);
 
+            Review review = session.get(Review.class, 1);
+            session.delete(review);
             session.getTransaction().commit();
-            System.out.println("Done successfully!");
-        }
-    }
+            System.out.println("Done!");
 
+        }
+
+
+    }
 }
