@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="034c3a4d-e7fd-42a9-b978-2494b5709aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateCourseReview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/ManyToManyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateCoursesDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/demo/CreateCoursesDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/one_to_one/entity/Course.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
       <recent name="org.example.one_to_one.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CreateCourseReview">
+  <component name="RunManager" selected="Application.ManyToManyDemo">
     <configuration name="CreateCourseReview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.CreateCourseReview" />
       <module name="hibernate-one-to-one" />
@@ -81,19 +80,6 @@
     </configuration>
     <configuration name="CreateCoursesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.CreateCoursesDemo" />
-      <module name="hibernate-one-to-one" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.one_to_one.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteCourseDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.DeleteCourseDemo" />
       <module name="hibernate-one-to-one" />
       <extension name="coverage">
         <pattern>
@@ -131,13 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManyToManyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.one_to_one.demo.ManyToManyDemo" />
+      <module name="hibernate-one-to-one" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.one_to_one.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ManyToManyDemo" />
         <item itemvalue="Application.CreateCourseReview" />
         <item itemvalue="Application.CreateCoursesDemo" />
         <item itemvalue="Application.FetchJoinDemo" />
         <item itemvalue="Application.EagerLazyDemo" />
-        <item itemvalue="Application.DeleteCourseDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +154,7 @@
       <workItem from="1672495639917" duration="4020000" />
       <workItem from="1672503099566" duration="3146000" />
       <workItem from="1672748377505" duration="3030000" />
+      <workItem from="1672791789111" duration="2146000" />
     </task>
     <servers />
   </component>
